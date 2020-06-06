@@ -1,0 +1,12 @@
+.share-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        display: inline-block;
+        margin-right: 1.6rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

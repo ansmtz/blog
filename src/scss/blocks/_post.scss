@@ -1,0 +1,36 @@
+.post {
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #dde2e7;
+    &__title {
+        margin: 0;
+        margin-bottom: 1.6rem;
+        color: #1a1a1a;
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__info {
+        margin-bottom: 2.25rem;
+        color: #b0b0b0;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__image {
+        display: block;
+        margin-bottom: 2.5rem;
+    }
+    &__content {
+        color: #1a1a1a;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75;
+        margin-bottom: 2.5rem;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}

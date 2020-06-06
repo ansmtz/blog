@@ -17,3 +17,20 @@
         background-color: lighten(#375573, 20%);
     }
 }
+
+.btn-light-rounded {
+    display: inline-block;
+    border-radius: .3rem;
+    background-color: #375573;
+    color: #ffffff; 
+    font-size: .75rem;
+    letter-spacing: 0.015rem;
+    font-weight: 500;
+    padding: 1.1rem 1.8rem;
+    text-transform: uppercase;
+    &:hover {
+        background-color: lighten(#375573, 20%);
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
