@@ -1,0 +1,17 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    // 9 и 3 для контента 1170px + поля
+    display: grid;
+    grid-template-columns: 13% repeat(12, minmax(auto, 98px)) 13%;
+
+    .posts {
+        grid-column: 2/11;
+    }
+
+    .sidebar {
+        grid-column: 11/span 3;
+    }
+}

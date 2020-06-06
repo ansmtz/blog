@@ -1,0 +1,19 @@
+.btn-rounded {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 2.2rem;
+    height: 3rem;
+    border-radius: 19px;
+    border-style: none;
+    background-color: #375573;
+    color: #ffffff;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    cursor: pointer;
+    transition: all .6s ease-in;
+
+    &:hover {
+        background-color: lighten(#375573, 20%);
+    }
+}

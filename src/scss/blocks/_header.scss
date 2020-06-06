@@ -1,0 +1,22 @@
+.header {
+    padding: 3% 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dde2e7;
+
+    &__social {}
+
+    &__logo {}
+
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-search {
+            margin-right: 2rem;
+        }
+    }
+}
