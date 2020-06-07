@@ -1,0 +1,51 @@
+@mixin page {
+    font-size: clamp(10px, 1.1rem, 20px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .0225rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+
+    &__recent a,
+    &__older a {
+        color: #000000;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .0175rem;
+        font-weight: 700;
+
+        &:hover {
+            color: #e84c50;
+            text-decoration: none;
+        }
+    }
+
+    &__current {
+        display: flex;
+        align-items: center;
+
+        &-item a {
+            @include page;
+            margin-left: 1.1rem;
+        }
+
+        &:first-child>* {
+            margin-left: 0 !important;
+        }
+
+        &-item--active {
+            @include page;
+            color: #e84c50;
+            margin-left: 1.1rem;
+        }
+
+
+    }
+}
