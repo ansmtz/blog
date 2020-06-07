@@ -1,0 +1,25 @@
+mixin post(title, info, preview, content, link = "#")
+    article.post
+        h2.post__title #{title}
+        .post__info #{info}
+        .post__image 
+            //- img(src=`img/posts-preview/${preview}`, alt=#{title})
+            img(src="img/posts-preview/"+preview, alt=title)
+        .post__content
+            p 
+        .post__footer
+            .post__read-more
+                    +read-more("read more")
+            .post__share-icons
+                .share-icons
+                    a(href="#").share-icons__item
+                        img(src="./img/icons/social/whatsapp.svg", alt="Share in WhatsApp", width="21")
+                    a(href="#").share-icons__item
+                        img(src="./img/icons/social/instagram.svg", alt="Share in Instagram", width="19")
+                    a(href="#").share-icons__item
+                        img(src="./img/icons/social/twitter.svg", alt="Share in Twitter", width="21")
+                    a(href="#").share-icons__item
+                        img(src="./img/icons/social/facebook-f.svg", alt="Share in Facebook",width="19")
+//- Austin DIY sriracha polaroid sartorial la croix.
+//- december 26, 2019 — 5 comments
+//- 
