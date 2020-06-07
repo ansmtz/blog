@@ -5,13 +5,14 @@ body {
 .main-container {
     // 9 и 3 для контента 1170px + поля
     display: grid;
-    grid-template-columns: 13% repeat(12, minmax(auto, 98px)) 13%;
-
+    grid-template-columns: 14% 55% 17% 14%;
+    grid-column-gap: 2rem;
+    justify-content: center;
     .posts {
-        grid-column: 2/11;
+        grid-column: 2/ 3;
     }
 
     .sidebar {
-        grid-column: 11/span 3;
+        grid-column: 3/4;
     }
 }

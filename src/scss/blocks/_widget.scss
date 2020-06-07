@@ -1,0 +1,21 @@
+.widget {
+
+    &:first-child {
+        margin-top: 3rem;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 1.8rem;
+    }
+    
+    &__title{
+        border: 1px solid #dde2e7;
+        border-radius: 4px;
+        color: #1a1a1a;
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-align: center;
+        line-height: 1;
+    }
+}
