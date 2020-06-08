@@ -8,11 +8,20 @@ body {
     grid-template-columns: 14% 55% 17% 14%;
     grid-column-gap: 2rem;
     justify-content: center;
+
     .posts {
         grid-column: 2/ 3;
+
     }
 
     .sidebar {
         grid-column: 3/4;
     }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto repeat(4, 17%) auto;
+    grid-template-rows: repeat(2, max-content);
+    grid-column-gap: 1.875rem;
 }
