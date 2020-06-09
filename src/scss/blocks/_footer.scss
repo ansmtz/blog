@@ -12,6 +12,9 @@
         display: flex;
         flex-direction: column;
         padding: 3.75rem 0 5.625rem 0;
+        &:last-child {
+            justify-self: end;
+        }
         .footer__link {
             color: #8e9399;
             font-size: 1rem;
