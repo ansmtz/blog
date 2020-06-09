@@ -1,0 +1,7 @@
+form(action="").form
+    h2.form__title Comment It:
+    textarea(name="comment", cols="30", rows="10").form__comment
+    input(type="text", name="name", inputmode="text").form__name
+    input(type="email", name="email", inputmode="email").form__email
+    input(type="url", name="url", inputmode="url").form__url
+    +light-rounded-btn("Comment")

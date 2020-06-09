@@ -1,0 +1,6 @@
+mixin comment(avatar, author, content, link='#')
+    .comment 
+        .comment__avatar 
+            img(src="./img/users/" + avatar, alt=author)
+        a(href=link).comment__author author
+        p.comment__content #{content} 

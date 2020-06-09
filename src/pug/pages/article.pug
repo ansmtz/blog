@@ -1,0 +1,15 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Главная";
+
+block content
+    include ./../sections/header.pug
+
+    .article-container
+        +full-post("Test", "full-post-preview.jpg", "Info")
+            p One
+            p Two
+        include ./../sections/form.pug
+        include ./../sections/comments.pug
+    include ./../sections/footer.pug
