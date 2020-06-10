@@ -1,8 +1,8 @@
 extends ./../layouts/main.pug
 
 block variables
-    - const title = "Главная";
-
+    - const pageTitle = jsonData.posts[3].title;
+    
 block content
     include ./../sections/header.pug
 

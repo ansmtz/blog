@@ -1,12 +1,15 @@
 .form {
     margin-bottom: 5rem;
+
     &__title {
         font-size: 2rem;
         font-family: "Playfair Display", serif;
         font-weight: 400;
         color: #1a1a1a;
     }
-    input, &__comment {
+
+    input,
+    &__comment {
         font-weight: 300;
         color: #4e5e66;
         background-color: #e9eff2;
@@ -15,30 +18,35 @@
         border-radius: .6rem;
         box-shadow: none;
         outline: none;
-        &:active, &:focus {
+        transition: all .6s ease-in;
+
+        &:active,
+        &:focus {
             background-color: #e9eff2;
             border: 2px solid #95bacc;
             color: #4e5e66;
             font-weight: 400;
         }
     }
+
     &__comment {
         width: 100%;
-        margin-top:1.25rem ;
+        margin-top: 1.25rem;
         margin-right: 1.25rem;
-    } 
+    }
 
     &__name {
         display: inline-block;
         width: 20%;
-        margin-top:1.25rem;
+        margin-top: 1.25rem;
         margin-bottom: 1.25rem;
         margin-right: 1.25rem;
     }
+
     &__email {
         display: inline-block;
         width: 25%;
-        margin-top:1.25rem ;
+        margin-top: 1.25rem;
         margin-right: 1.25rem;
     }
 
